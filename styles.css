@@ -1,0 +1,66 @@
+:root {
+  --text-color: #1f2937;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --button-bg: #1d4ed8;
+  --button-bg-hover: #1e40af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #f3f4f6;
+  transition: background-color 0.35s ease;
+  padding: 1rem;
+}
+
+.page {
+  width: min(100%, 34rem);
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+}
+
+p {
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--button-bg);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
